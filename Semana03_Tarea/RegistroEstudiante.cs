@@ -12,10 +12,10 @@ class RegistroEstudiante
    // Mostramos los datos del estudiante
     public void MostrarDatos()
     {
-        Console.WriteLine("ID" + id);
-        Console.WriteLine("Nombres" + nombres);
-        Console.WriteLine("Apellidos" + apellidos);
-        Console.WriteLine("Direccion" + direccion);
+        Console.WriteLine("ID: " + id);
+        Console.WriteLine("Nombres: " + nombres);
+        Console.WriteLine("Apellidos; " + apellidos);
+        Console.WriteLine("Direccion: " + direccion);
         Console.WriteLine("Telefonos:");
         for (int i = 0; i < numerostelefonos.Length; i++) //Usamos for para recorrer todos los elementos del array uno por uno.
         {
@@ -27,6 +27,10 @@ class Inicio
 {
     static void Main()
     {
+        // Encabezado
+        Console.WriteLine("Registo de Estudiantes");
+        Console.WriteLine("----------------------");
+        //Crear objeto estudiante
         RegistroEstudiante estudiante = new RegistroEstudiante();
         estudiante.MostrarDatos();
     }
