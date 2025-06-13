@@ -3,7 +3,7 @@
 class RegistroEstudiante
 {
     // Declaracion de variables y sus valores
-    public int id = 0951824424; 
+    public int id = 951824424; 
     public string nombres = "Sofia Victoria";
     public string apellidos = "Alvarado Orellana";
     public string direccion = "Daule Marianita 2";
@@ -21,5 +21,13 @@ class RegistroEstudiante
         {
             Console.WriteLine("-" + numerostelefonos[i]);// Muestra en pantalla el numero de Telefono
         }
+    }
+}
+class Inicio
+{
+    static void Main()
+    {
+        RegistroEstudiante estudiante = new RegistroEstudiante();
+        estudiante.MostrarDatos();
     }
 }
