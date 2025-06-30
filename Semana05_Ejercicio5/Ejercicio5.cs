@@ -8,8 +8,22 @@
         {
             numeros.Add(i);
         }
-    }
+        numeros.Reverse();
+
+        for (int i = 0; i < numeros.Count; i++)
+        {
+            if (i < numeros.Count - 1) {
+                System.Console.Write(numeros[i] + ", ");
+            }
+            else
+            {
+                System.Console.Write(numeros[i]);
+            }
+        }
         
+    }
 }
+        
+
 
     
