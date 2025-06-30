@@ -12,4 +12,9 @@
         asignaturas.Add("Historia");
         asignaturas.Add("Lengua");
         asignaturas.Sort(); //Orden Alfabetico
-     
+        foreach (string asignatura in asignaturas)
+        {
+            System.Console.WriteLine(asignatura);
+        }
+    }
+}
