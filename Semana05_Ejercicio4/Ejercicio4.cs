@@ -11,7 +11,12 @@
             string entrada = System.Console.ReadLine() ?? "0";
             int numero = System.Int32.Parse(entrada);
             numeros.Add(numero);
+        }
             numeros.Sort();
+            System.Console.WriteLine("\nNúmeros ordenados de menor a mayor:");
+            foreach (int numero in numeros)
+        {
+            System.Console.WriteLine(numero);
         }
     }
 }    
