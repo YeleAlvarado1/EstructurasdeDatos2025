@@ -2,4 +2,8 @@
 {
     static void Main()
     {
-      
+        System.Console.WriteLine("Ejercicio # 1");
+        System.Console.WriteLine("================");
+
+        System.Collections.Generic.List<string> asignaturas = new System.Collections.Generic.List<string>();
+        
