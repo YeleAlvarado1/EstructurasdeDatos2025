@@ -16,7 +16,9 @@
             string nota = System.Console.ReadLine() ?? "";
             notas.Add(nota);
         }
-
+              System.Console.WriteLine();
+        for (int i = 0; i < asignaturas.Count; i++) {
+            System.Console.WriteLine("En " + asignaturas[i] + " has sacado " + notas[i]);
         }
     }
 }
