@@ -20,7 +20,7 @@
                 System.Console.Write(numeros[i]);
             }
         }
-        
+        System.Console.WriteLine();
     }
 }
         
