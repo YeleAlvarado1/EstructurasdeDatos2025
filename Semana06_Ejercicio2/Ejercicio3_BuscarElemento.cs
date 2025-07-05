@@ -75,5 +75,20 @@ public class ListaSimple
             actual.Siguiente = nuevo;
         }
     }
-  
+ // Dibuja la lista en consola
+    public void Dibujar()
+    {
+        Nodo? actual = inicio;
+        System.Console.Write("head --> ");
+        while (actual != null)
+        {
+            System.Console.Write("[ " + actual.Dato + " ]");
+            if (actual.Siguiente != null)
+            {
+                System.Console.Write(" --> ");
+            }
+            actual = actual.Siguiente;
+        }
+        System.Console.WriteLine(" --> null");
+    } 
 }
