@@ -75,7 +75,7 @@ public class ListaSimple
             actual.Siguiente = nuevo;
         }
     }
- // Dibuja la lista en consola
+    // Dibuja la lista en consola
     public void Dibujar()
     {
         Nodo? actual = inicio;
@@ -91,4 +91,23 @@ public class ListaSimple
         }
         System.Console.WriteLine(" --> null");
     } 
+     // Método que busca cuántas veces aparece un valor
+    public int BuscarCantidad(int valorBuscado)
+    {
+        Nodo? actual = inicio;
+        int contador = 0;
+
+        while (actual != null)
+        {
+            if (actual.Dato == valorBuscado)
+            {
+                contador++; // Se encontró una coincidencia
+            }
+            actual = actual.Siguiente;
+        }
+
+        // Retorna la cantidad (puede ser 0 si no se encontró)
+        return contador;
+    }
 }
+
