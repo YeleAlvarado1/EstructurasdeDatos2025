@@ -1,4 +1,7 @@
-﻿
+﻿//Implementar el método de búsqueda en la clase lista, el cual debe retornar el número de cual debe retornar el número de
+//veces que se encuentra el dato dentro veces que se encuentra el dato dentro de la lista. de la lista. En caso de no encontrarse, el método d En caso de no encontrarse, el método debe
+//mostrar un mensaje indicando que el dato mostrar un mensaje indicando que el dato no fue enc no fue encontrado. El parámetro de entrada del ontrado. El parámetro de entrada del
+//método es el valor que método es el valor que se desea buscar. se desea buscar.
 class Program
 {
     static void Main(string[] args)
