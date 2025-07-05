@@ -89,4 +89,23 @@ public class ListaSimple
         }
         return total;
     }
+    public Nodo? Buscar(int dato)
+    {
+        Nodo? actual = inicio;
+        while (actual != null)
+        {
+            if (actual.Dato == dato)
+            {
+                return actual;
+            }
+            actual = actual.Siguiente;
+        }
+        return null;
+    }
+
 }
+
+
+
+    
+    
