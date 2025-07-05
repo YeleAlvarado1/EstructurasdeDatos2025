@@ -18,9 +18,10 @@
 
 public class Nodo
 {
-    public int Dato;
+    public int Dato;  // Valor que guarda el nodo
     public Nodo? Siguiente;
 
+      // Constructor para inicializar el nodo con un dato
     public Nodo(int dato)
     {
         Dato = dato;
@@ -30,20 +31,21 @@ public class Nodo
 
 public class ListaSimple
 {
-    Nodo? inicio;
+    Nodo? inicio;  //inicio de la lista
 
+     // Constructor para inicializar la lista vacía
     public ListaSimple()
     {
         inicio = null;
     }
-
+     // Inserta un nodo al principio   
     public void InsertarInicio(int dato)
     {
         Nodo nuevo = new Nodo(dato);
         nuevo.Siguiente = inicio;
         inicio = nuevo;
     }
-
+    // Inserta un nodo al final
     public void InsertarFinal(int dato)
     {
         Nodo nuevo = new Nodo(dato);
@@ -61,7 +63,7 @@ public class ListaSimple
             actual.Siguiente = nuevo;
         }
     }
-
+     // Recorre la lista y la imprime       
     public void Dibujar()
     {
         Nodo? actual = inicio;
