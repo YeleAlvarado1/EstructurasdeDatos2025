@@ -2,10 +2,8 @@
 {
     static void Main(string[] args)
     {
-        // Crear lista vacía
         ListaSimple lista = new ListaSimple();
 
-        // Insertar elementos en la lista
         lista.InsertarInicio(5);
         lista.InsertarFinal(10);
         lista.InsertarFinal(15);
@@ -17,6 +15,7 @@
         System.Console.WriteLine("Total de nodos: " + cantidad);
     }
 }
+
 public class Nodo
 {
     public int Dato;
@@ -28,6 +27,7 @@ public class Nodo
         Siguiente = null;
     }
 }
+
 public class ListaSimple
 {
     Nodo? inicio;
@@ -61,8 +61,32 @@ public class ListaSimple
             actual.Siguiente = nuevo;
         }
     }
-}
-    
-        
 
-       
+    public void Dibujar()
+    {
+        Nodo? actual = inicio;
+        System.Console.Write("head --> ");
+        while (actual != null)
+        {
+            System.Console.Write("[ " + actual.Dato + " ]");
+            if (actual.Siguiente != null)
+            {
+                System.Console.Write(" --> ");
+            }
+            actual = actual.Siguiente;
+        }
+        System.Console.WriteLine(" --> null");
+    }
+
+    public int Contar()
+    {
+        int total = 0;
+        Nodo? actual = inicio;
+        while (actual != null)
+        {
+            total++;
+            actual = actual.Siguiente;
+        }
+        return total;
+    }
+}
