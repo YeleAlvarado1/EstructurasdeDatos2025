@@ -51,6 +51,29 @@ public class Nodo
 public class ListaSimple
 {
     Nodo? inicio;   // Nodo que representa el inicio de la lista
+    // Constructor: la lista inicia vacía
+    public ListaSimple()
+    {
+        inicio = null;
+    }
 
+    // Inserta un nodo al final de la lista
+    public void InsertarFinal(int dato)
+    {
+        Nodo nuevo = new Nodo(dato);
+        if (inicio == null)
+        {
+            inicio = nuevo;
+        }
+        else
+        {
+            Nodo actual = inicio;
+            while (actual.Siguiente != null)
+            {
+                actual = actual.Siguiente;
+            }
+            actual.Siguiente = nuevo;
+        }
+    }
   
 }
