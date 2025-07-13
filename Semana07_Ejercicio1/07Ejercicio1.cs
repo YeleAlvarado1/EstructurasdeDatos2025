@@ -1,6 +1,4 @@
 ﻿//Definciion de String de Prueba
-using System.Diagnostics;
-
 string expresion = "[2 * (4 + 1)] + {3 + [(7 - 2) * 5]}";
 //Declaracion de pila 
 Stack<char> simbolos = new();
@@ -38,5 +36,5 @@ if (simbolos.Count == 0)
 }
 else
 {
-    Console.WriteLine ("Expresión Desbalanceada")
+    Console.WriteLine("Expresión Desbalanceada");
 }
