@@ -1,3 +1,11 @@
-﻿Stack<int> torreA = new();
+﻿// De claracion de pilas Torre A,B,C
+Stack<int> torreA = new();
 Stack<int> torreB = new();
 Stack<int> torreC = new();
+
+int discos = 3;
+
+for (int i = discos; i >= 1; i--)
+{
+    torreA.Push(i);
+}
