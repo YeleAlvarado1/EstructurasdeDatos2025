@@ -32,4 +32,11 @@ foreach (char c in expresion)
         }
     }
 }
-
+if (simbolos.Count == 0)
+{
+    Console.WriteLine("Expresión Balanceada");
+}
+else
+{
+    Console.WriteLine ("Expresión Desbalanceada")
+}
