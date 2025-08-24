@@ -30,6 +30,14 @@
         {
             pacientes.Add("PX " + i);
         }
+        //Verificar que paciente tiene ambas dosis 
+        HashSet<string> ambasDosis = new HashSet<string>(pfizer);
+        ambasDosis.IntersectWith(astrazeneca);
+
+        //Verificar pacientes no vacunados 
+        HashSet<string> noVacunados = new HashSet<string>(pacientes);
+        noVacunados.ExceptWith(vacunados);
+        
     }
 }
     
