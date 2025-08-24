@@ -19,8 +19,17 @@
             {
                 astrazeneca.Add(candidato);
             }
-        }    
+        }
+        //Se une los 2 grupos vacunados 
+        HashSet<string> vacunados = new HashSet<string>(pfizer);
+        vacunados.UnionWith(astrazeneca);
 
+        //Se genera los 500 pacientes en total 
+        HashSet<string> pacientes = new HashSet<string>();
+        for (int i = 1; i <= 500; i++)
+        {
+            pacientes.Add("PX " + i);
+        }
     }
 }
     
