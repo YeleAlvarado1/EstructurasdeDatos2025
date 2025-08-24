@@ -37,8 +37,37 @@
         //Verificar pacientes no vacunados 
         HashSet<string> noVacunados = new HashSet<string>(pacientes);
         noVacunados.ExceptWith(vacunados);
-        
+
+        //Mostrar Resultados 
+        Console.WriteLine("\n===== Pacientes no vacunados =====");
+        foreach (var item in noVacunados)
+        {
+            Console.WriteLine("• " + item);
+        }
+        Console.WriteLine("\nTOTAL no vacunados: " + noVacunados.Count);
+
+        Console.WriteLine("\n===== Pacientes vacunados con ambas dosis =====");
+        foreach (var item in ambasDosis)
+        {
+            Console.WriteLine("• " + item);
+        }
+        Console.WriteLine("\nTOTAL ambas dosis: " + ambasDosis.Count);
+
+        Console.WriteLine("\n===== Pacientes vacunados con Pfizer =====");
+        foreach (var item in pfizer)
+        {
+            Console.WriteLine("• " + item);
+        }
+        Console.WriteLine("\nTOTAL PFIZER: " + pfizer.Count);
+
+        Console.WriteLine("\n===== Pacientes vacunados con Astrazeneca =====");
+        foreach (var item in astrazeneca)
+        {
+            Console.WriteLine("• " + item);
+        }
+        Console.WriteLine("\nTOTAL Vacuna Astrazeneca: " + astrazeneca.Count);
     }
+    
 }
     
     
